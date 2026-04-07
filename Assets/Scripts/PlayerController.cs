@@ -1,32 +1,16 @@
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private CharacterController characterController;
-
-    [SerializeField]
-    private new Camera camera;
-
-    [SerializeField]
-    private float speed = .5f;
-
-    [SerializeField]
-    private float jumpForce = 5f;
-
-     [SerializeField]
-    private float gravity = -9.8f;
-
-    
-    [SerializeField]
-    private float sprint = 2.5f;
-
+    [SerializeField] private CharacterController characterController;
+    [SerializeField] private new Camera camera;
+    [SerializeField] private float speed = .5f;
+    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float gravity = -9.8f;
+    [SerializeField] private float sprint = 2.5f;
     private float xRotation;
     private float yRotation;
     private float verticalVelocity = 0f;
-
-    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
