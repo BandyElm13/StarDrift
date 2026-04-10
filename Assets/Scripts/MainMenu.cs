@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string playGame;
     [SerializeField] private string totorial;
 
-    public void PlayGame()
+    public void Play()
     {
         SceneManager.LoadScene(playGame);
     }

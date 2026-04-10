@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -6,7 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private new Camera camera;
     [SerializeField] private float speed = .5f;
     [SerializeField] private float sprint = 2.5f;
-
+    
+    [SerializeField] private string level;
     private float xRotation;
     private float yRotation;
 
@@ -23,6 +25,24 @@ public class PlayerController : MonoBehaviour
     {
         HandleMouseLook();
         HandleMovement();
+        respawn();
+        backtoMenu();
+    }
+
+    private void respawn()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(level);
+        }
+    }
+
+     private void backtoMenu()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 
     void HandleMouseLook()
