@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-        private float maxHealth = 10;
+        [SerializeField] private float maxHealth = 10;
         private float currentHealth;
 
         [SerializeField] private Slider healthBar;
