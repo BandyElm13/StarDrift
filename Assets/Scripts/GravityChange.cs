@@ -1,4 +1,3 @@
-// GravityChange.cs
 using UnityEngine;
 
 
@@ -43,16 +42,20 @@ public class GravityChange : MonoBehaviour
             return;
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            SetGravity(Vector3.left,  "LEFT  – walk on right wall");
+            SetGravity(Vector3.left);// left
         else if (Input.GetKeyDown(KeyCode.Alpha2))
-            SetGravity(Vector3.up,    "UP    – walk on ceiling");
+            SetGravity(Vector3.up); //up
         else if (Input.GetKeyDown(KeyCode.Alpha3))
-            SetGravity(Vector3.down,  "DOWN  – default floor");
+            SetGravity(Vector3.down);//down
         else if (Input.GetKeyDown(KeyCode.Alpha4))
-            SetGravity(Vector3.right, "RIGHT – walk on left wall");
+            SetGravity(Vector3.right); // right
+        else if(Input.GetKeyDown(KeyCode.Q))
+            SetGravity(Vector3.forward);
+        else if(Input.GetKeyDown(KeyCode.E))
+            SetGravity(Vector3.back);
     }
 
-    void SetGravity(Vector3 direction, string debugLabel)
+    void SetGravity(Vector3 direction)
     {
         _gravityDir = direction.normalized;
         _gravityVelocity = 0f;
