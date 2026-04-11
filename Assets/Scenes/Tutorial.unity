@@ -2578,7 +2578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170.1, y: 141.6}
+  m_AnchoredPosition: {x: -175, y: 151.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194976958
@@ -2667,7 +2667,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 2.1106052, z: 149.1585, w: -36.41513}
+  m_margin: {x: 0, y: -9.32667, z: 149.1585, w: -36.41513}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2954,6 +2954,14 @@ PrefabInstance:
     - target: {fileID: 4747191262913358341, guid: abd061af7e4746f4a93b1c76c452386e, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747191262913358341, guid: abd061af7e4746f4a93b1c76c452386e, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 4747191262913358341, guid: abd061af7e4746f4a93b1c76c452386e, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 4917830079863035706, guid: abd061af7e4746f4a93b1c76c452386e, type: 3}
       propertyPath: m_Name
@@ -3856,7 +3864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -324.5, y: 131.5}
+  m_AnchoredPosition: {x: -323, y: 154}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2039253074
@@ -4169,8 +4177,8 @@ PrefabInstance:
         To Return to the Menu
 
 
-        Lets start off small,Vector3 direction =
-        aimTarget - transform.position; navigate to the second plateform,'
+        Lets start off small navigate to the second
+        plateform,'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
