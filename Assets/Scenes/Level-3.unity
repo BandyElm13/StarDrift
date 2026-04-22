@@ -1474,7 +1474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173338821783321622, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: chaseRange
-      value: 120
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4173338821783321622, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: attackDelay
@@ -1482,7 +1482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173338821783321622, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: attackRange
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4977242747069168680, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_Layer
@@ -1494,15 +1494,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5022768069834363521, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: speed
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5022768069834363521, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: damage
-      value: 35
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5022768069834363521, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: maxhealth
-      value: 5000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 5523472606896934885, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1522,15 +1522,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412620259288865230, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8412620259288865230, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_LocalScale.y
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8412620259288865230, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_LocalScale.z
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8412620259288865230, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1538,7 +1538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8412620259288865230, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.35
+      value: 16.6
       objectReference: {fileID: 0}
     - target: {fileID: 8412620259288865230, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_LocalPosition.z

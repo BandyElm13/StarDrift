@@ -45,6 +45,7 @@ public class EnemyAI : MonoBehaviour
                 {
                     Vector3 direction = (player.position - transform.position).normalized;
                     transform.position += direction * stats.speed * Time.deltaTime;
+                    transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
                 }
                 break;
             case EnemyState.Attack:
