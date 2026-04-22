@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Gravity-Shock.slnx"
+    "dotnet.defaultSolution": "Star-Drift.slnx"
 }
