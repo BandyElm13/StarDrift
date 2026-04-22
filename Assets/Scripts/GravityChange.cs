@@ -6,27 +6,27 @@ public class GravityChange : MonoBehaviour
     public float gravityStrength = 20f;
     public float rotationSpeed = 10f;
     public float jumpForce = 8f;
-    public Vector3 GravityDir => _gravityDir;
-    public Quaternion GravityTilt => _gravityTilt;
+    public Vector3 GravityDir => gravityDir;
+    public Quaternion GravityTilt => gravityTilt;
     private CharacterController _cc;
-    private Camera _playerCamera;
-    private Vector3 _gravityDir = Vector3.down;
-    private float _gravityVelocity = 0f;
+    private Camera playerCamera;
+    private Vector3 gravityDir = Vector3.down;
+    private float gravityVelocity = 0f;
 
-    private Quaternion _gravityTilt = Quaternion.identity;
-    private Quaternion _targetTilt  = Quaternion.identity;
+    private Quaternion gravityTilt = Quaternion.identity;
+    private Quaternion targetTilt  = Quaternion.identity;
 
     void Awake()
     {
         _cc = GetComponent<CharacterController>();
 
-        _playerCamera = GetComponentInChildren<Camera>();
-        if (_playerCamera == null)
-            _playerCamera = Camera.main;
+        playerCamera = GetComponentInChildren<Camera>();
+        if (playerCamera == null)
+            playerCamera = Camera.main;
 
-        _gravityDir  = Vector3.down;
-        _gravityTilt = Quaternion.identity;
-        _targetTilt  = Quaternion.identity;
+        gravityDir  = Vector3.down;
+        gravityTilt = Quaternion.identity;
+        targetTilt  = Quaternion.identity;
     }
 
     void Update()
@@ -40,53 +40,64 @@ public class GravityChange : MonoBehaviour
     {
         if (!Input.GetMouseButton(1))
             return;
+        if (!Input.GetKeyDown(KeyCode.E))
+            return;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            SetGravity(Vector3.left);// left
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-            SetGravity(Vector3.up); //up
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-            SetGravity(Vector3.down);//down
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-            SetGravity(Vector3.right); // right
-        else if(Input.GetKeyDown(KeyCode.Q))
-            SetGravity(Vector3.forward);
-        else if(Input.GetKeyDown(KeyCode.E))
-            SetGravity(Vector3.back);
+    Vector3 cameraDirection = playerCamera.transform.forward;
+
+    Vector3[] cardinals = {
+        Vector3.forward, Vector3.back,
+        Vector3.left,    Vector3.right,
+        Vector3.up,      Vector3.down
+    };
+
+    Vector3 best = Vector3.forward;
+    float bestDot = -Mathf.Infinity;
+    foreach (Vector3 dir in cardinals)
+    {
+        float dot = Vector3.Dot(cameraDirection, dir);
+        if (dot > bestDot)
+        {
+            bestDot = dot;
+            best = dir;
+        }
+    }
+
+    SetGravity(best);
     }
 
     void SetGravity(Vector3 direction)
     {
-        _gravityDir = direction.normalized;
-        _gravityVelocity = 0f;
+        gravityDir = direction.normalized;
+        gravityVelocity = 0f;
 
-        Vector3 newUp = -_gravityDir;
+        Vector3 newUp = -gravityDir;
         Vector3 forward = Vector3.ProjectOnPlane(Vector3.forward, newUp).normalized;
         if (forward == Vector3.zero)
             forward = Vector3.ProjectOnPlane(Vector3.right, newUp).normalized;
 
-        _targetTilt = Quaternion.LookRotation(forward, newUp);
+        targetTilt = Quaternion.LookRotation(forward, newUp);
     }
 
     void SmoothRotateToGravity()
     {
-        _gravityTilt = Quaternion.Slerp(_gravityTilt, _targetTilt, rotationSpeed * Time.deltaTime);
+        gravityTilt = Quaternion.Slerp(gravityTilt, targetTilt, rotationSpeed * Time.deltaTime);
     }
 
     void ApplyGravity()
     {
         bool isGrounded = IsGroundedCustom();
 
-        if (isGrounded && _gravityVelocity > 0f)
-            _gravityVelocity = 0f;
+        if (isGrounded && gravityVelocity > 0f)
+            gravityVelocity = 0f;
 
         if (isGrounded && Input.GetButtonDown("Jump"))
-            _gravityVelocity = -jumpForce;
+            gravityVelocity = -jumpForce;
 
         if (!isGrounded)
-            _gravityVelocity += gravityStrength * Time.deltaTime;
+            gravityVelocity += gravityStrength * Time.deltaTime;
 
-        _cc.Move(_gravityDir * _gravityVelocity * Time.deltaTime);
+        _cc.Move(gravityDir * gravityVelocity * Time.deltaTime);
     }
     bool IsGroundedCustom()
     {
@@ -94,7 +105,7 @@ public class GravityChange : MonoBehaviour
 
         return Physics.Raycast(
             transform.position,
-            _gravityDir,
+            gravityDir,
             out _,
             (_cc.height * 0.5f) + checkDistance,
             ~LayerMask.GetMask("Player")
