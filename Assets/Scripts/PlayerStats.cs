@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-        [SerializeField] private float maxHealth = 10;
-        private float currentHealth;
+        [SerializeField] private float maxHealth = 100;
+        public float currentHealth;
 
         [SerializeField] private Slider healthBar;
         [SerializeField] private string dead;
@@ -25,6 +25,13 @@ public class PlayerStats : MonoBehaviour
         healthBar.value = currentHealth;
     }
 
+    public void healHealth(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        healthBar.value = currentHealth;
+    }
+
     private void PlayerDeath()
     {
         if(currentHealth == 0)
@@ -32,18 +39,8 @@ public class PlayerStats : MonoBehaviour
             SceneManager.LoadScene(dead);
         }
     }
-    public void testDamage()
-    {
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            currentHealth -= 10;
-            healthBar.value = currentHealth;
-        }
-    }
-
     void Update()
     {
-        testDamage();
         PlayerDeath();
     }
 
