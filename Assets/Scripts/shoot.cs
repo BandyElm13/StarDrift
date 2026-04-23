@@ -1,7 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
-
 public class shoot : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
