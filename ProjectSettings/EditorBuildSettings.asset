@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScrean.unity
     guid: 960fde31e36a2a2468da697fba53f637
+  - enabled: 1
+    path: Assets/Scenes/DeathScreanTutorial.unity
+    guid: c010766d638d69f4682867a2b183fe30
+  - enabled: 1
+    path: Assets/Scenes/StarDriftHub.unity
+    guid: f4941e93c78bf0e4ab9a641e91104ffe
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
