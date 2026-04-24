@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private CharacterController characterController;
     [SerializeField] private new Camera camera;
-    [SerializeField] private float speed = .5f;
+    [SerializeField] private float speed = 4;
     [SerializeField] private float sprint = 2.5f;
     
     [SerializeField] private string level;
@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("StarDrift Menu");
+        }
+
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            SceneManager.LoadScene("StarDriftHub");
         }
     }
 

@@ -33,6 +33,13 @@ public class CompanionDialog : MonoBehaviour
 
     void Update()
     {
+          //Health is Low
+        if(ps.currentHealth < criticalHealth)
+        {
+            humpheysText.text = humphreyLog[3];
+            return;
+        }
+
         //humpheys basic controls dialog
         if(Input.GetKey(KeyCode.Alpha1))
         {
@@ -41,20 +48,10 @@ public class CompanionDialog : MonoBehaviour
         } else if(Input.GetKey(KeyCode.Alpha2))
         {
             humpheysText.text = humphreyLog[2];
-        } else
+        } else if(Input.GetKeyDown(KeyCode.Alpha0))
         {
             humpheysText.text = "";
         }
-
-        // //Health is Low
-        // if(ps.currentHealth < criticalHealth)
-        // {
-        //     humpheysText.text = humphreyLog[3];
-
-        // } else if(ps.currentHealth >= criticalHealth)
-        // {
-        //     humpheysText.text = "";
-        // }
     }
 
     
