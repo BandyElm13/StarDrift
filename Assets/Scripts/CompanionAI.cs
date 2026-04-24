@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CompanionAI : MonoBehaviour
 {
-    [SerializeField] private float speed = 4f;
+    [SerializeField] private float speed = 8f;
     private enum companionState {Follow, Heal, Idle}
 
     private companionState currentState = companionState.Idle;
