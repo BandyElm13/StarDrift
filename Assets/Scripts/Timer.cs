@@ -1,16 +1,28 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] public int currentTime;
+    public bool timerRunning = false;
+
+    public UnityEvent onTimer;
+
     void Start()
     {
-        
+        timerRunning = true;
+        StartCoroutine(gameTimer());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public IEnumerator gameTimer() {
+    for(int i = currentTime; i > 0; i--) {
+        currentTime = i;
+        //Debug.Log("current time = " + i);
+        yield return new WaitForSeconds(1f);
     }
+    currentTime = 0;
+    timerRunning = false;
+    onTimer.Invoke();
+}
 }
