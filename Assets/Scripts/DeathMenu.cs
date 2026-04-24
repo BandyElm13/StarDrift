@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    [SerializeField] private string backToLevel1;
+    [SerializeField] private string backToHub = "StarDriftHub";
     [SerializeField] private string backToMainMenu;
     void Start()
     {
@@ -12,7 +12,7 @@ public class DeathMenu : MonoBehaviour
     }
     public void restartGame()
     {
-        SceneManager.LoadScene(backToLevel1);
+        SceneManager.LoadScene(backToHub);
     }
 
     public void BackToMenu()
