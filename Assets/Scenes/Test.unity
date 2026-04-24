@@ -627,6 +627,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+--- !u!224 &1003488154 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1730603028910000348, guid: 020ff0e5841375a4abaf1db2dd03a2a5, type: 3}
+  m_PrefabInstance: {fileID: 8685181313876411856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1011380714 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2586121700216928564, guid: 428b861b17ffb514595dcad4bbab6810, type: 3}
@@ -638,6 +643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 702ea812265db5b4a802cc2adb405ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
+--- !u!4 &1011380715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1518156924632891809, guid: 428b861b17ffb514595dcad4bbab6810, type: 3}
+  m_PrefabInstance: {fileID: 1026636597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1026636597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -704,7 +714,10 @@ PrefabInstance:
       objectReference: {fileID: 1099926245}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1518156924632891809, guid: 428b861b17ffb514595dcad4bbab6810, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1003488154}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 428b861b17ffb514595dcad4bbab6810, type: 3}
 --- !u!1 &1099926245 stripped
@@ -1536,7 +1549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6534812677921029941, guid: a0e8b86c0aa8f3c4c9f5bec972ee4cee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.508
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 6534812677921029941, guid: a0e8b86c0aa8f3c4c9f5bec972ee4cee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1703,7 +1716,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1011380715}
     m_Modifications:
     - target: {fileID: 542588541204172960, guid: 020ff0e5841375a4abaf1db2dd03a2a5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1809,7 +1822,6 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1446998089}
-  - {fileID: 8685181313876411856}
   - {fileID: 1274915231}
   - {fileID: 799653206}
   - {fileID: 531369175}

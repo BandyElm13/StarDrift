@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class OnlyUseInTutorial : MonoBehaviour
 {
-    private float gravityValue = -9.81f;
+    private float gravityValue = -4f;
     private Vector3 playerVelocity;
 
     [SerializeField] private CharacterController characterController;

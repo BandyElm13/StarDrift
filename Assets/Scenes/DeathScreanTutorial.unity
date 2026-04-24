@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f26edcce379d6746b59c3b7c4648f72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeathMenu
-  backToLevel1: tutorial-Part2
+  backToHub: tutorial-Part2
   backToMainMenu: StarDrift Menu
 --- !u!114 &1557423316
 MonoBehaviour:
