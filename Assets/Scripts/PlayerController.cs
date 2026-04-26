@@ -12,13 +12,12 @@ public class PlayerController : MonoBehaviour
     private float xRotation;
     private float yRotation;
 
-    private GravityChange _gravityChange;
-
+    private GravityChange gravityChange;
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        _gravityChange = GetComponent<GravityChange>();
+        gravityChange = GetComponent<GravityChange>();
     }
 
     void Update()
@@ -59,7 +58,7 @@ public class PlayerController : MonoBehaviour
         yRotation = Mathf.Clamp(yRotation, -90f, 90f);
         xRotation += mouseX;
 
-        Quaternion tilt = _gravityChange.GravityTilt;
+        Quaternion tilt = gravityChange.GravityTilt;
         transform.rotation = tilt * Quaternion.Euler(0f, xRotation, 0f);
 
         camera.transform.localRotation = Quaternion.Euler(yRotation, 0f, 0f);
@@ -74,7 +73,7 @@ public class PlayerController : MonoBehaviour
         float currentSpeed = isSprinting ? speed * sprint : speed;
 
         // Project camera directions onto the current gravity surface plane
-        Vector3 gravityUp  = -_gravityChange.GravityDir;
+        Vector3 gravityUp  = -gravityChange.GravityDir;
         Vector3 camForward = Vector3.ProjectOnPlane(camera.transform.forward, gravityUp).normalized;
         Vector3 camRight   = Vector3.ProjectOnPlane(camera.transform.right,   gravityUp).normalized;
 
