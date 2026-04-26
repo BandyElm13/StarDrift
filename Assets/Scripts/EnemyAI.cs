@@ -20,7 +20,6 @@ public class EnemyAI : MonoBehaviour
         idlePosition = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float playerDistance = Vector3.Distance(transform.position, player.position);
