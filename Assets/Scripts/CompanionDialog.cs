@@ -9,7 +9,7 @@ public class CompanionDialog : MonoBehaviour
 
     List<string> humphreyLog = new List<string>();
 
-    [SerializeField] private PlayerStats ps;
+    public PlayerStats ps;
 
     [SerializeField] private TMP_Text humpheysText;
 

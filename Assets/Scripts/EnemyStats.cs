@@ -6,10 +6,9 @@ public class EnemyStats : MonoBehaviour
     [SerializeField]
         public float maxhealth = 100f;
         public float currentHealth;
-        public float damage = 20f;
+        public float enemyDamage = 20f;
         public float speed = 2.5f;
         [SerializeField] private Slider EnemySLider;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHealth = maxhealth;

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class FlyingEnemyAI : MonoBehaviour
 {
-    private enum EnemyState {Idle, Chase, Attack}
+        private enum EnemyState {Idle, Chase, Attack}
     private EnemyState current = EnemyState.Idle;
     private Transform player;
     private EnemyStats stats;
@@ -11,12 +11,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float attackDelay = 1f;
 
     private float attackTimer =  0f;
-    private Vector3 idlePosition;
+    private float starterY;
+    private bool isDiving = false;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         stats = GetComponent<EnemyStats>();
-        idlePosition = transform.position;
+        starterY = transform.position.y;
     }
 
     void Update()
@@ -27,6 +28,9 @@ public class EnemyAI : MonoBehaviour
         switch(current)
         {
             case EnemyState.Idle:
+
+                transform.position = new Vector3(transform.position.x, starterY, transform.position.z);
+
                 if (playerDistance <= chaseRange)
                 {
                     current = EnemyState.Chase;
@@ -36,12 +40,14 @@ public class EnemyAI : MonoBehaviour
                 if(playerDistance > chaseRange)
                 {
                 current = EnemyState.Idle;
+                isDiving = false;
                 } else if(playerDistance <= attackRange)
                 {
                     current = EnemyState.Attack;
                 } else
                 {
-                    Vector3 direction = (player.position - transform.position).normalized;
+                    Vector3 targetPosition = new Vector3(player.position.x, starterY, player.position.z);
+                    Vector3 direction = (targetPosition - transform.position).normalized;
                     transform.position += direction * stats.speed * Time.deltaTime;
                     transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
                 }
@@ -53,8 +59,24 @@ public class EnemyAI : MonoBehaviour
                 }
                 else if (attackTimer <= 0f)
                 {
-                    DealDamage();
+                    isDiving = true;
                     attackTimer = attackDelay;
+                }
+                if(isDiving)
+                {
+                    Vector3 diveDirection = (player.position - transform.position).normalized;
+                    transform.position += diveDirection * stats.speed * 2f * Time.deltaTime;
+                    transform.LookAt(player.position);
+                    if(Vector3.Distance(transform.position, player.position) < 1)
+                    {
+                        DealDamage();
+                        isDiving = false;
+                        transform.position = new Vector3(transform.position.x, starterY, transform.position.z);
+                        current = EnemyState.Chase;
+                    }
+                    {
+                        
+                    }
                 }
                 break;
 

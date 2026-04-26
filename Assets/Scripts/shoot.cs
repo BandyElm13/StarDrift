@@ -5,11 +5,21 @@ public class shoot : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 3f;
 
+    private float shootDelay = 1f;
+    private float shootTime = 0f;
+
+
+
     void Update()
     {
+        shootTime -= Time.deltaTime;
         if(Input.GetMouseButtonDown(0))
         {
-            Fire();
+            if(shootTime <= 0f)
+            {
+                Fire();
+                shootTime = shootDelay;
+            }
         }
     }
     private void Fire()

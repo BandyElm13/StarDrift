@@ -111,7 +111,7 @@ public class BossAi : MonoBehaviour
     {
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
         if (playerStats != null)
-            playerStats.takeDamage(es.damage);
+            playerStats.takeDamage(es.enemyDamage);
     }
 
     // Visualize ranges in the editor

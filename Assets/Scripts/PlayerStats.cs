@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-        [SerializeField] private float maxHealth = 100;
+        [SerializeField] private float maxHealth = 100f;
         public float currentHealth;
-
+        public float playerDamage = 10f;
         [SerializeField] private Slider healthBar;
         [SerializeField] private string dead;
   
