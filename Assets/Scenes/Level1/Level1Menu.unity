@@ -687,6 +687,14 @@ PrefabInstance:
       propertyPath: levelA
       value: Level 1-A
       objectReference: {fileID: 0}
+    - target: {fileID: 7576010832654625374, guid: 3fc4021e971c4e045a3408441c623490, type: 3}
+      propertyPath: levelB
+      value: Level 1-B
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576010832654625374, guid: 3fc4021e971c4e045a3408441c623490, type: 3}
+      propertyPath: levelC
+      value: Level 1-C
+      objectReference: {fileID: 0}
     - target: {fileID: 8764581843698601004, guid: 3fc4021e971c4e045a3408441c623490, type: 3}
       propertyPath: m_Camera
       value: 

@@ -34,6 +34,7 @@ public class EnemyStats : MonoBehaviour
         if(wes != null)
         {
             wes.spawnKey();
+
         }
         gameObject.SetActive(false);
         

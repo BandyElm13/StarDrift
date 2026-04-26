@@ -1,27 +1,27 @@
-using System.Data.Common;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
     [SerializeField] private float damage = 20f; private float lifetime = 5f;
-    private bool hit = false;
+    private float live = 5f;
 
-    void Start()
+    void Update()
     {
-        //Destroy(gameObject, lifetime);
-    } 
-
+      Destroy(gameObject, live);
+    }
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Hit something: " + other.gameObject.name + " tag: " + other.tag);
-        if (hit) return;
-        if (other.CompareTag("Player")) return;
         if (other.CompareTag("Gun")) return;
 
-        hit = true;
-
-        if(other.CompareTag("Enemy")) {
-            //Debug.Log("Enemy has been hit");
+        if(other.CompareTag("Player")) {
+            PlayerStats player = other.gameObject.GetComponent<PlayerStats>();
+            if(player != null)
+            {
+                player.takeDamage(damage);
+            }
+        } else if(other.CompareTag("Enemy"))
+        {
             EnemyStats enemy = other.gameObject.GetComponentInParent<EnemyStats>();
             if (enemy != null)
             {
