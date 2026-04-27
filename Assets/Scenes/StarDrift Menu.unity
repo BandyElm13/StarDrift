@@ -356,19 +356,19 @@ MonoBehaviour:
     2. Right Shift  - Sprint
 
     3. Change
-    Gravity - RightClick + E
+    Gravity - Hold(Right Mouse) & Tap(E) while facing desired direction
 
-    4. Shoot - Left Click
+    4. Shoot(Left
+    Mouse)
 
-    5. Talk with Companion
-    - 1 or 2
+    5. Talk with Companion(1 or 2)
 
-    6. Clear Companion dialog - 0
+    6. Clear Companion dialog (0)
 
-    7. Return to Main Menu - Escape
+    7.
+    Return to Main Menu (Escape)
 
-    8.
-    Return to HubWorld - H'
+    8. Return to HubWorld (H)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1227,6 +1227,8 @@ MonoBehaviour:
   bullet: {fileID: 0}
   firePoint: {fileID: 1539688747}
   bulletSpeed: 30
+  shootAudio: {fileID: 0}
+  reloadAudio: {fileID: 0}
 --- !u!65 &884953457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1370,9 +1372,21 @@ PrefabInstance:
       propertyPath: m_text
       value: 'By: Tyler Harvey'
       objectReference: {fileID: 0}
+    - target: {fileID: 1250246557688268077, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005482338247000840, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7395652236820593535, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_Name
       value: humphrey
+      objectReference: {fileID: 0}
+    - target: {fileID: 8082255296656079672, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8631685400547750488, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1671,8 +1685,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 915640444723942962, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 918330659729034316, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219145076470648720, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1360813568773161817, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}

@@ -576,7 +576,7 @@ Transform:
   m_GameObject: {fileID: 4988083214493323991}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: 0.85, z: -19.239056}
+  m_LocalPosition: {x: 3.0061982, y: 1.14, z: -20.039888}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.57}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -677,9 +677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029581c7763b5cd42a1da3b87a646f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  chaseRange: 15
-  attackRange: 2
-  attackDelay: 0.5
+  chaseRange: 30
+  attackRange: 4
+  attackDelay: 1
 --- !u!114 &295997298187110159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,9 +692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e0583263d4a17489f60858eb114d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
-  maxhealth: 650
+  maxhealth: 150
   currentHealth: 0
-  damage: 80
+  enemyDamage: 20
   speed: 2.5
   EnemySLider: {fileID: 8511110124212022008}
 --- !u!1 &5048650766608825537
@@ -1081,7 +1081,6 @@ GameObject:
   - component: {fileID: 1085622283889920324}
   - component: {fileID: 3475683424258642915}
   - component: {fileID: 5044938539487793842}
-  - component: {fileID: 569884274676580591}
   m_Layer: 6
   m_Name: EnemyHealth
   m_TagString: Untagged
@@ -1172,15 +1171,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &569884274676580591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9094732598188725951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e09e1eff8b06bb347be347ff894d7d2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FaceCamera

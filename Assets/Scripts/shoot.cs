@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 public class shoot : MonoBehaviour
 {
@@ -5,8 +6,11 @@ public class shoot : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 3f;
 
-    private float shootDelay = 1f;
+    private float shootDelay = 3.5f;
     private float shootTime = 0f;
+
+    [SerializeField] private AudioSource shootAudio;
+    [SerializeField] private AudioSource reloadAudio;
 
 
 
@@ -19,6 +23,9 @@ public class shoot : MonoBehaviour
             {
                 Fire();
                 shootTime = shootDelay;
+                shootAudio.timeSamples = (int)(0.2f * shootAudio.clip.frequency);
+                shootAudio.Play();
+                reloadAudio.PlayDelayed(shootAudio.clip.length);
             }
         }
     }
