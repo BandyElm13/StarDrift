@@ -3,9 +3,9 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     [SerializeField] private float lifetime = 2.5f;
-    private float playerdamage = 5f;
+    private float playerdamage = 50f;
 
-    private float enemydamage = 10f;
+    private float enemydamage = 25f;
     private float live = 5f;
     void Update()
     {

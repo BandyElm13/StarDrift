@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private new Camera camera;
     [SerializeField] private float speed = 4;
     [SerializeField] private float sprint = 2.5f;
-    
+
     [SerializeField] private string level;
     private float xRotation;
     private float yRotation;
@@ -78,7 +78,6 @@ public class PlayerController : MonoBehaviour
         Vector3 camRight   = Vector3.ProjectOnPlane(camera.transform.right,   gravityUp).normalized;
 
         Vector3 moveDir = (camForward * vertInput + camRight * horInput) * currentSpeed * Time.deltaTime;
-
         characterController.Move(moveDir);
     }
 }
