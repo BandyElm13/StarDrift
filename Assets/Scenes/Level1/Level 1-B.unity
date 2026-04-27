@@ -1073,7 +1073,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 084a2fa8de7f96c4cb49728f4ebf2fc8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.43
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2546,6 +2546,10 @@ PrefabInstance:
     - target: {fileID: 4458857730589464410, guid: a248fb23420afe246978de952b90a0cd, type: 3}
       propertyPath: followRange
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816087956916338879, guid: a248fb23420afe246978de952b90a0cd, type: 3}
+      propertyPath: m_text
+      value: (Humphrey) Hurry we dont have much time!!!
       objectReference: {fileID: 0}
     - target: {fileID: 6670182597556201807, guid: a248fb23420afe246978de952b90a0cd, type: 3}
       propertyPath: ps

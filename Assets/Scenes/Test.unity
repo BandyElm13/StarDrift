@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flying Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6569730772884396295, guid: 2e11f9b4caacb324ca74aaffbfc1f215, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -924,6 +928,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7134187415054354593, guid: dfc1e85d888945048bef7975280165d9, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060957861943325849, guid: dfc1e85d888945048bef7975280165d9, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1220,6 +1228,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1793601440708428345, guid: bdb1e1daf0f7ed34586d5e54fdec0c1b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4922878230542518243, guid: bdb1e1daf0f7ed34586d5e54fdec0c1b, type: 3}
       propertyPath: m_Name
       value: Speedy Enemy
@@ -1292,6 +1304,10 @@ PrefabInstance:
     - target: {fileID: 2747458287726036245, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_Name
       value: Standard Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173338821783321622, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5523472606896934885, guid: 0e47efa72ebba704f9c00493e7553816, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1411,6 +1427,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ba30a63a4dd22c46b2f8515a78c2397, type: 3}
+--- !u!1001 &1772640695920951460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 528295153443410378, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209009574266681221, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
+      propertyPath: m_Name
+      value: DeathDoor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0d5bbbeb4f2dda48bc70e07520fb3ce, type: 3}
 --- !u!1001 &2079604652169250842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2034,7 +2107,7 @@ PrefabInstance:
       objectReference: {fileID: 1011380714}
     - target: {fileID: 304165760851725578, guid: 5200dd2c1c268464e93b60dddf51d0ba, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 617044063505182173, guid: 5200dd2c1c268464e93b60dddf51d0ba, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2126,3 +2199,4 @@ SceneRoots:
   - {fileID: 1113157438}
   - {fileID: 8480726477598559850}
   - {fileID: 928419967}
+  - {fileID: 1772640695920951460}

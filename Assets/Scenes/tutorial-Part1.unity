@@ -1461,6 +1461,91 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeletePickUpAndDoor
   objectToDestroy1: {fileID: 1057602189}
   objectToDestroy2: {fileID: 14756288}
+--- !u!1001 &1064497868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.469
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.272
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41579044
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9094604
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 130.862
+      objectReference: {fileID: 0}
+    - target: {fileID: 507570147171319195, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481279394424145412, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.333
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481279394424145412, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.732
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481279394424145412, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.619
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012543682705389857, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_text
+      value: 'Important!!!
+
+        1. Humphrey can previde valuable information
+        about a level.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012543682705389857, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_fontSize
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012543682705389857, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930624807544233001, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+      propertyPath: m_Name
+      value: Board Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 2531015209723873811, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
 --- !u!1 &1092145007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,7 +1869,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eaf7a1b600f4338428d0baa5079e91f4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.82
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2948,3 +3033,4 @@ SceneRoots:
   - {fileID: 952963352}
   - {fileID: 1333895304}
   - {fileID: 1821519521}
+  - {fileID: 1064497868}
