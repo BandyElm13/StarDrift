@@ -669,10 +669,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e0583263d4a17489f60858eb114d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
-  maxhealth: 50
+  maxhealth: 80
   currentHealth: 0
   enemyDamage: 5
-  speed: 10
+  speed: 8
   EnemySLider: {fileID: 5610654497816985103}
 --- !u!1 &5820066091898624463
 GameObject:
