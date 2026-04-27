@@ -24,17 +24,17 @@ public class PlayerController : MonoBehaviour
     {
         HandleMouseLook();
         HandleMovement();
-        respawn();
+        //respawn();
         backtoMenu();
     }
 
-    private void respawn()
-    {
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(level);
-        }
-    }
+    // private void respawn()
+    // {
+    //     if(Input.GetKeyDown(KeyCode.R))
+    //     {
+    //         SceneManager.LoadScene(level);
+    //     }
+    // }
 
      private void backtoMenu()
     {

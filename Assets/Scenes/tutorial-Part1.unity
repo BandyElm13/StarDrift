@@ -1351,7 +1351,7 @@ PrefabInstance:
     - target: {fileID: 1089542765445344477, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_text
       value: (Humphrey) Thank Goodness you are alive!!! After your fight with The
-        Dark Load, I though you where done for. Quick the universe is at risk of
+        Dark Lord, I thought you where done for. Quick the universe is at risk of
         his wrath.
       objectReference: {fileID: 0}
     - target: {fileID: 1089542765445344477, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
@@ -2791,6 +2791,14 @@ PrefabInstance:
     - target: {fileID: 3489364452703740931, guid: 052402c7d2528fb43866517ce0cfde67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023371989793754424, guid: 052402c7d2528fb43866517ce0cfde67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5023371989793754424, guid: 052402c7d2528fb43866517ce0cfde67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5144456658359736490, guid: 052402c7d2528fb43866517ce0cfde67, type: 3}
       propertyPath: m_LocalPosition.x

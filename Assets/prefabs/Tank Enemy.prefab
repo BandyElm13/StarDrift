@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e0583263d4a17489f60858eb114d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
-  maxhealth: 150
+  maxhealth: 250
   currentHealth: 0
   enemyDamage: 20
   speed: 2.5
