@@ -651,17 +651,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1089542765445344477, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_text
-      value: 'We''ll need a weapon if we wish to take down Marcus. I''ll keep it
-        safe for you whenever you don''t need it.
+      value: 'We''ll need a weapon if we wish to take down The Dark Lord. I''ll keep
+        it safe for you whenever you don''t need it.
 
 
-        We should also keep an
-        eye out for TCoins. The more we collect, the more places we''ll be able to
-        reach.'
+        We should also keep
+        an eye out for TCoins. The more we collect, the more places we''ll be able
+        to reach.'
       objectReference: {fileID: 0}
     - target: {fileID: 1089542765445344477, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_fontSize
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089542765445344477, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1089542765445344477, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_fontSizeBase
@@ -685,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8082255296656079672, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: followRange
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8631685400547750488, guid: 50f1a9fb7f5a4594abf6ad5b11ac8c39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1673,7 +1677,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eaf7a1b600f4338428d0baa5079e91f4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.57
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0

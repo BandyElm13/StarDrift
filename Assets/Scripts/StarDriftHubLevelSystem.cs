@@ -30,7 +30,13 @@ public class StarDriftHubLevelSustem : MonoBehaviour
         if(PlayerInventory.T_Coins >= 13) {ToLevelFive.SetActive(true);}
         if(PlayerInventory.T_Coins >= 16) {ToLevelSix.SetActive(true);}
         if(PlayerInventory.T_Coins >= 19) {ToLevelFinal.SetActive(true);}
-        
+        //1
+        //4
+        //7
+        //10
+        //13
+        //16
+        //19
     }
 
 

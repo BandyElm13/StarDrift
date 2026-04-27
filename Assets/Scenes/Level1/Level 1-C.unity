@@ -135,9 +135,13 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4956789453179538629, guid: 4de7c65442581b147b1813a414fdacd9, type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5486051596967551513, guid: 4de7c65442581b147b1813a414fdacd9, type: 3}
       propertyPath: currentTime
-      value: 150
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 8230365630448776272, guid: 4de7c65442581b147b1813a414fdacd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1356,7 +1360,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: dcb04af93e7b10546a37369c0c6d7be2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.48
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2546,6 +2550,10 @@ PrefabInstance:
     - target: {fileID: 4458857730589464410, guid: a248fb23420afe246978de952b90a0cd, type: 3}
       propertyPath: followRange
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4816087956916338879, guid: a248fb23420afe246978de952b90a0cd, type: 3}
+      propertyPath: m_text
+      value: (Humphrey) One hit and its over
       objectReference: {fileID: 0}
     - target: {fileID: 6670182597556201807, guid: a248fb23420afe246978de952b90a0cd, type: 3}
       propertyPath: ps

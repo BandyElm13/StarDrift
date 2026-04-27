@@ -1423,7 +1423,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eaf7a1b600f4338428d0baa5079e91f4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2615,7 +2615,7 @@ PrefabInstance:
     - target: {fileID: 9127970106821887212, guid: f77f0555c0cf70e4b8679ae22202a28a, type: 3}
       propertyPath: m_NavMeshData
       value: 
-      objectReference: {fileID: 23800000, guid: 736d2a10dd26e37459140743ae83ada3, type: 2}
+      objectReference: {fileID: 23800000, guid: 53bd5f2bc55d5ea42b3e857df2f27a25, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
