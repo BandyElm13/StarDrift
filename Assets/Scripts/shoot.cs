@@ -6,7 +6,7 @@ public class shoot : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 3f;
 
-    private float shootDelay = 0.4f;
+    private float shootDelay = 0.1f;
     private float shootTime = 0f;
     
     [SerializeField] private AudioSource shootAudio;
@@ -59,8 +59,8 @@ public class shoot : MonoBehaviour
                 UpdateAmmoUI();
                 shootTime = shootDelay;
                 
-                shootAudio.timeSamples = (int)(0.2f * shootAudio.clip.frequency);
-                shootAudio.Play();
+                //shootAudio.timeSamples = (int)(0.2f * shootAudio.clip.frequency);
+                //shootAudio.Play();
             }
         }
     }
