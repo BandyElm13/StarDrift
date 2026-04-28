@@ -23,13 +23,13 @@ public class StarDriftHubLevelSustem : MonoBehaviour
 
     private void unlockLevels()
     {
-        if(PlayerInventory.T_Coins >= 1) {ToLevelOne.SetActive(true);}
-        if(PlayerInventory.T_Coins >= 4) {ToLevelTwo.SetActive(true);}
-        if(PlayerInventory.T_Coins >= 7) {ToLevelThree.SetActive(true);}
-        if(PlayerInventory.T_Coins >= 10) {ToLevelFour.SetActive(true);}
-        if(PlayerInventory.T_Coins >= 13) {ToLevelFive.SetActive(true);}
-        if(PlayerInventory.T_Coins >= 16) {ToLevelSix.SetActive(true);}
-        if(PlayerInventory.T_Coins >= 19) {ToLevelFinal.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelOne.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelTwo.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelThree.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelFour.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelFive.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelSix.SetActive(true);}
+        if(PlayerInventory.T_Coins >= 0) {ToLevelFinal.SetActive(true);}
         //1
         //4
         //7
