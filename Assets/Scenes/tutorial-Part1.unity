@@ -1525,7 +1525,7 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Important!!!
 
-        1. Humphrey can previde valuable information
+        1. Humphrey can provide valuable information
         about a level.'
       objectReference: {fileID: 0}
     - target: {fileID: 4012543682705389857, guid: ab952292c86a7414c8ea92db6ce3600c, type: 3}
