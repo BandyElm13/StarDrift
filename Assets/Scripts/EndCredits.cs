@@ -13,13 +13,17 @@ public class EndCredits : MonoBehaviour
     [SerializeField] private Image Scene6;
     [SerializeField] private Image Scene7;
 
-    [SerializeField] private float displayDuration = 34f; // How long each image shows (seconds)
-    [SerializeField] private float fadeDuration = 1f;     // How long the fade in/out takes
+    [SerializeField] private float displayDuration = 34f;
+    [SerializeField] private float fadeDuration = 2f;
+    [SerializeField] private AudioSource creditsMusic;
 
     private Image[] scenes;
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;  // unlocks the cursor
+        Cursor.visible = true;
+        
         scenes = new Image[] { Scene1, Scene2, Scene3, Scene4, Scene5, Scene6, Scene7 };
 
         // Hide all images at the start

@@ -14,7 +14,7 @@ public class CompanionAI : MonoBehaviour
     [SerializeField] private float followRange = 100f;
     [SerializeField] private float healRange = 4f;
     [SerializeField] private float healAmount = 10f;
-    [SerializeField] private float healDelay = 2f;
+    [SerializeField] private float healDelay = 1f;
     private float healTimer =  0f;
 
     void Start()
