@@ -475,6 +475,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 740762193884248233, guid: 5a074910254fd404c9dc17b548c31c84, type: 3}
     - target: {fileID: 7042884067664831124, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 7943915694467720017}
+    - target: {fileID: 7042884067664831124, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
       propertyPath: shootAudio
       value: 
       objectReference: {fileID: 4141775162231913969}
@@ -522,5 +526,10 @@ AudioSource:
 --- !u!82 &4840251141686254021 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2271507024028367770, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
+  m_PrefabInstance: {fileID: 6677155301967307359}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7943915694467720017 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3644661568912130318, guid: 03e4fb13f41b55548990efbf456ef12b, type: 3}
   m_PrefabInstance: {fileID: 6677155301967307359}
   m_PrefabAsset: {fileID: 0}
